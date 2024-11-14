@@ -1,13 +1,8 @@
-let firstname=document.getElementById("fname");
-let lastname=document.getElementById("lname");
-let mybtn=document.getElementById("btn");
+let fname = document.querySelector("input[name='fname']");
+let laname = document.querySelector("input[name='lname']");
+let btn = document.getElementById("btn");
 
-if(fistname&&lastname){
-btn.addEventListener("click",()=>{
-	console.log(`${firstname.value}+${lastname.value}`);
-	alert(`${firstname.value}+${lastname.value}`)
-})
-}
-else{
-console.log("Fields are empty")
-}
+btn.addEventListener("click", () => {
+    console.log(`${fname.value} ${laname.value}`);
+    alert(`${fname.value} ${laname.value}`);
+});
